@@ -94,6 +94,7 @@ a {
 }
 
 .navigation {
+  z-index: 99;
   position: absolute;
   width: 100%;
   margin-top: -150px;
@@ -110,6 +111,15 @@ a {
 }
 .navigation-btn:not(:last-child) {
   margin-right: 30px;
+}
+.navigation-fill {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  margin-top: 751.5px;
 }
 
 #radio1:checked ~ .first {
@@ -193,9 +203,7 @@ a {
 }
 
 .row {
-  margin-top: 850px;
   margin-left: 100px;
-  width: 100%;
   height: 200px;
   display: flex;
   align-items: center;
@@ -218,6 +226,8 @@ span {
 }
 
 .box-buy {
+  background-image: linear-gradient(0deg, rgba(255, 111, 36, 0.8), rgba(255, 111, 36, 0.8)), url("../resource/buy.jpeg");
+  background-size: 375px 200px;
   position: relative;
   margin-top: -85px;
   height: 100%;
@@ -245,15 +255,14 @@ span {
 .box-buy-content__a:hover {
   color: #fff;
 }
-.box-buy-content__img {
-  z-index: -9;
-  width: 375px;
-  height: 200px;
-  position: absolute;
-  margin-top: -114px;
-  margin-left: -110px;
+.box-buy-img {
+  margin-top: 40px;
+  width: 350px;
+  height: 175px;
 }
 .box-sell {
+  background-image: linear-gradient(0deg, rgba(35, 36, 37, 0.8), rgba(35, 36, 37, 0.8)), url("../resource/sell.jpeg");
+  background-size: 375px 200px;
   position: relative;
   margin-top: -85px;
   height: 100%;
@@ -282,13 +291,34 @@ span {
 .box-sell-content__a:hover {
   color: #ff6f24;
 }
-.box-sell-content__img {
-  z-index: -9;
-  width: 375px;
+.box-sell-img {
+  margin-top: 30px;
+  width: 350px;
   height: 200px;
-  position: absolute;
-  margin-top: -114px;
-  margin-left: -110px;
+}
+
+.section {
+  display: block;
+  top: 850px;
+  position: relative;
+}
+
+.gallery {
+  display: block;
+  margin-top: 200px;
+  padding-left: 100px;
+}
+.gallery-title {
+  text-align: center;
+  padding: 0 15px;
+  font-size: 40px;
+  font-weight: bold;
+}
+.gallery-tag {
+  margin: 20px;
+  border: solid 1px;
+  width: 250px;
+  height: 325px;
 }
 
 /*# sourceMappingURL=style.css.map */
