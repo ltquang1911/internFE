@@ -17,6 +17,8 @@ a{
 
 .top-banner{
     margin: 0 auto;
+    display: block;
+    height: 960px;
 }
 .container{
     @include flexbox(center, center, );
@@ -259,12 +261,10 @@ span{
 }
 .section{
     display: block;
-    top: 850px;
-    position: relative;
 }
 .gallery{
-    display: block;
     margin-top: 200px;
+    width: 1400px;
     padding-left: 100px;
     &-title{
         text-align: center;
@@ -272,9 +272,40 @@ span{
         font-size: 40px;
         font-weight: bold;
     }
-    &-tag{margin: 20px;
+    &-tag{
+        align-items: center;
+        justify-content: center;
+        margin: 20px;
         border: solid 1px;
-        width: 250px;
-        height: 325px;
+        width: 275px;
+        height: 375px;
+        &-content{
+            padding: 20px;
+        }
+        &__img{
+            width: 100%;
+            height: auto;
+        }
+        &__info{
+            padding: 20px 0;
+            border-bottom: solid #ddd 1px;
+            &-title{
+                font-size: 17px;
+                font-weight: bold;
+                color: #000;
+                &:hover{
+                    color: $primary-color;
+                }
+            }
+            &-price{
+                padding-top: 10px;
+                font-size: 12px;
+                &--span{
+                    padding-right: 5px;
+                    border-right: solid 2px #000;
+                    font-weight: bold;
+                }
+            }
+        }
     }
 }
