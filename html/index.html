@@ -9,8 +9,10 @@
         src="https://kit.fontawesome.com/38af87e710.js" crossorigin="anonymous">
     </script>
     <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../font/stylesheet.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/owl.carousel.css">
+    <link rel="stylesheet" href="../css/owl.theme.default.css">
 </head>
 <body>
     <div class="top-banner">
@@ -112,14 +114,15 @@
     </section>
     <section class="section">
         <div class="gallery">
-            <div class="gallery-title">
-                <h1 class="gallery-title-content">CÁC DÒNG XE TIÊU BIỂU</h1>
+            <div class="section-title">
+                <h1 class="section-title-content">CÁC DÒNG XE TIÊU BIỂU</h1>
             </div>
             <div class="container" style="justify-content: left;">
                 <div class="gallery-tag">
                     <div class="gallery-tag-content">
                         <a href="">
                             <img class="gallery-tag__img" src="../resource/toyota.jpg" alt="">
+                            <div class="gallery-tag__status">Hiện có</div>
                         </a>
                         <div class="gallery-tag__info">
                             <a href="" class="gallery-tag__info-title">
@@ -131,10 +134,62 @@
                                 </p> 
                             </div>
                         </div>
+                        <ul class="gallery-tag__property">
+                            <li class="gallery-tag__property-content"><img class="gallery-tag__property-img" src="../resource/calendar.png" alt=""> 2021</li>
+                            <li class="gallery-tag__property-content"><img class="gallery-tag__property-img" src="../resource/speed.png" alt=""> 12000</li>
+                            <li class="gallery-tag__property-content"><img class="gallery-tag__property-img" src="../resource/level.png" alt=""> Tự động</li>
+                            <li class="gallery-tag__property-content"><img class="gallery-tag__property-img" src="../resource/map-pin.png" alt=""> TPHCM</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="gallery-tag">
+                    <div class="gallery-tag-content">
+                        <a href="">
+                            <img class="gallery-tag__img" src="../resource/toyota.jpg" alt="">
+                            <div class="gallery-tag__status">Hiện có</div>
+                        </a>
+                        <div class="gallery-tag__info">
+                            <a href="" class="gallery-tag__info-title">
+                                <div >Mitsubishi Attrage bản CVT mẫu 2021</div>
+                            </a>
+                            <div class="gallery-tag__info-price">
+                                <p>
+                                    <span class="gallery-tag__info-price--span">Giảm còn: 430 Triệu</span> Trả trước: 172 Triệu
+                                </p> 
+                            </div>
+                        </div>
+                        <ul class="gallery-tag__property">
+                            <li class="gallery-tag__property-content"><img class="gallery-tag__property-img" src="../resource/calendar.png" alt=""> 2021</li>
+                            <li class="gallery-tag__property-content"><img class="gallery-tag__property-img" src="../resource/speed.png" alt=""> 12000</li>
+                            <li class="gallery-tag__property-content"><img class="gallery-tag__property-img" src="../resource/level.png" alt=""> Tự động</li>
+                            <li class="gallery-tag__property-content"><img class="gallery-tag__property-img" src="../resource/map-pin.png" alt=""> TPHCM</li>
+                        </ul>
                     </div>
                 </div>
             </div>
+            <div class="gallery__btn">
+                <button class="gallery__btn-content">Xem thêm xe</button>
+            </div>
         </div>
     </section>
+    <section class="section">
+        <div class="service">
+            <div class="section-title">
+                <h1 class="section-title-content">CÁC LOẠI HÌNH DỊCH VỤ</h1>
+            </div>
+            <div class="owl-carousel owl-theme">
+                <div>Content</div>
+                <div>Content</div>
+                <div>Content</div>
+            </div>
+        </div>
+    </section>
+    <script src="../js/owl.carousel.js"></script>
+    <script src="../js/test.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".owl-carousel").owlCarousel();
+        });
+    </script>
 </body>
 </html>
