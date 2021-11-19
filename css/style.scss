@@ -261,24 +261,25 @@ span{
 }
 .section{
     display: block;
-}
-.gallery{
-    margin-top: 200px;
-    width: 1400px;
-    padding-left: 100px;
     &-title{
+        margin-top: 30px;
         text-align: center;
         padding: 0 15px;
         font-size: 40px;
         font-weight: bold;
     }
+}
+.gallery{
+    margin-top: 200px;
+    width: 1400px;
+    padding-left: 100px;
     &-tag{
         align-items: center;
         justify-content: center;
         margin: 20px;
-        border: solid 1px;
+        border: solid 1px #ddd;
         width: 275px;
-        height: 375px;
+        height: fit-content;
         &-content{
             padding: 20px;
         }
@@ -305,6 +306,44 @@ span{
                     border-right: solid 2px #000;
                     font-weight: bold;
                 }
+            }
+        }
+        &__status{
+            position: absolute;
+            margin-top: -24px;
+            padding: 5px;
+            width: fit-content;
+            background-color: plum;
+            color: #fff;
+        }
+        &__property{
+            padding-top: 10px;
+            &-content{
+                padding-bottom: 7px;
+                width: 50%;
+                float: left;
+                &::after{
+                    clear: both;
+                }
+            }
+            &-img{
+                vertical-align: middle;
+                width: 25px;
+                position: relative;
+            }
+        }
+    }
+    &__btn{
+        @include flexbox(center,center , );
+        &-content{
+            border: none;
+            background-color: $primary-color;
+            color: #fff;
+            padding: 20px 35px;
+            border-radius: 20px;
+            font-size: 17px;
+            &:hover{
+                color: #000;
             }
         }
     }
