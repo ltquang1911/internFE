@@ -200,7 +200,7 @@
     items:2
     })
     $('.owl-nav').click(function(event) {
-        $(this).removeClass('.disabled');
+        $(this).removeClass("disable");
     });
     $('.owl-carousel .service-section').owlCarousel({
     autoWidth: true,
@@ -211,7 +211,8 @@
     items:2
     })
     $('.owl-nav').click(function(event) {
-        $(this).removeClass('.disabled');
+        $('owl-nav').removeClass('disabled');
+        $('owl-dots').removeClass('disabled');
     });
 </script>
 <!--Custom Js-->
