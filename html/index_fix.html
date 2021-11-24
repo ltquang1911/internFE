@@ -171,6 +171,16 @@
             </div>
         </div>
     </section>
+    <section>
+        <div class="container" style="background-image: url(../resource/news-banner.png);">
+            <div class="row__title">
+                <label for="">TIN TỨC NỔI BẬT</label>
+            </div>
+            <div class="row">
+
+            </div>
+        </div>
+    </section>
 </body>
 </html>
 
@@ -184,23 +194,24 @@
     $('.owl-carousel').owlCarousel({
     autoWidth: true,
     loop: true,
-    navText:["<img src='../resource/left.png' alt=''>","<img src='../resource/right.png' alt=''>"],
     nav:true,
+    navText:["<img src='../resource/left.png' alt=''>","<img src='../resource/right.png' alt=''>"],
+    dots:true,
     items:2
     })
     $('.owl-nav').click(function(event) {
-        $(this).removeClass('disabled');
+        $(this).removeClass('.disabled');
     });
     $('.owl-carousel .service-section').owlCarousel({
     autoWidth: true,
     margin:30,
     loop: true,
-    navText:["<img src='../resource/left.png' alt=''>","<img src='../resource/right.png' alt=''>"],
     nav:true,
+    navText:["<img src='../resource/left.png' alt=''>","<img src='../resource/right.png' alt=''>"],
     items:2
     })
     $('.owl-nav').click(function(event) {
-        $(this).removeClass('disabled');
+        $(this).removeClass('.disabled');
     });
 </script>
 <!--Custom Js-->
