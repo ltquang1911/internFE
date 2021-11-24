@@ -100,9 +100,14 @@ a:hover {
   border-bottom: #ff6f24 solid 2px;
 }
 
+.owl-nav {
+  width: 100%;
+}
+
 .owl-nav, .owl-prev, .owl-next {
+  z-index: 2;
   position: absolute;
-  top: 200px;
+  top: 50%;
 }
 
 .owl-prev img, .owl-next img {
@@ -111,7 +116,7 @@ a:hover {
 }
 
 .owl-next {
-  left: 1465px;
+  right: 0;
 }
 
 .owl-dots {
