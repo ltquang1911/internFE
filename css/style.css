@@ -413,6 +413,7 @@ footer {
   color: #fff;
   padding-top: 50px;
   background-color: #000;
+  width: 1600px;
 }
 
 .box-info {
@@ -427,6 +428,66 @@ footer {
 }
 .box-info__mail {
   padding-top: 10px;
+}
+
+.box-link {
+  margin-left: 40px;
+}
+.box-link__title {
+  font-size: 20px;
+  font-weight: bold;
+}
+.box-link__underline {
+  padding-top: 13px;
+  border-bottom: #ff6f24 3px solid;
+  width: 90px;
+}
+.box-link__column {
+  font-size: 13px;
+  padding-top: 25px;
+  float: left;
+}
+.box-link__column:last-child {
+  margin-left: 70px;
+}
+.box-link__column::after {
+  clear: both;
+}
+.box-link__column__item {
+  padding-top: 10px;
+}
+.box-link__tag {
+  width: 210px;
+  padding-top: 25px;
+}
+.box-link__tag__a {
+  margin-top: 5px;
+  margin-left: 5px;
+  border: solid 1px;
+  padding: 3px;
+  display: inline-block;
+}
+.box-link__tag__a:hover {
+  color: #000;
+  background-color: #ff6f24;
+  border: 1px solid #fff;
+}
+.box-link__container {
+  padding-top: 15px;
+}
+.box-link__item {
+  font-size: 13px;
+  padding-top: 15px;
+}
+
+.copyright {
+  padding: 30px 0;
+  font-size: 15px;
+  font-weight: lighter;
+  text-align: center;
+}
+.copyright--span {
+  color: #ff6f24;
 }
 
 /*# sourceMappingURL=style.css.map */
